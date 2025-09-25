@@ -1,0 +1,15 @@
+name: My first workflow
+
+on: push
+jobs:
+    my-first-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout repo
+          uses: actions/checkout@v5
+
+        - name: listing the files
+          run: ls -ltarh
+
+        - name: Read the content
+          run: cat README.md
