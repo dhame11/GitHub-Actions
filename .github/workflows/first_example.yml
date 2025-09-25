@@ -1,9 +1,9 @@
 name: My first workflow
 
-on: push
+on: push # Workflow will trigger after pushing the new commit in repo" 
 jobs:
     my-first-job:
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-latest # "Github hosted runner"
       steps:
         - name: checkout repo
           uses: actions/checkout@v5
