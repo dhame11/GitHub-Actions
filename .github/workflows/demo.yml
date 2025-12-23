@@ -6,5 +6,6 @@ jobs:
     steps:
       - name: demo-step
         run: echo "hello world"
-      - name: completed
+      - name: completed-step
         run: echo "completed the workflow"
+      
