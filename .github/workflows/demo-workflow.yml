@@ -1,0 +1,10 @@
+name: demo-workflow
+on: workflow_dispatch
+jobs:
+  demo-jobs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: demo-step
+      run: echo "Running the workflow for the first time"
+    - name: to print output of uname command
+      run: uname
